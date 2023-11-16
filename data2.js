@@ -2390,6 +2390,12 @@ if (JSON.parse(localStorage.getItem('date')).length==0)
 {
   document.querySelector('.datafromjs').innerHTML='<p style="text-align: center;">Create A Plan to display</p>'//default message to display in the start
 }
+if (ingredientsList==null)
+{
+  tableList=[]
+  datelist=[]
+  ingredientslist=[]    
+}
 }
 
 //#############################//################//##################//#####################//########################//######################//########################
