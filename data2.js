@@ -2405,7 +2405,7 @@ function createTheDataTable()
  if(date) //if there is no date the whole function will not run
  {
 
-  if (tableList==null) // for the first users the lists will be null to make updation we have changed it empty array
+  if (ingredientsList==null) // for the first users the lists will be null to make updation we have changed it empty array
   {
     tableList=[]
     datelist=[]
