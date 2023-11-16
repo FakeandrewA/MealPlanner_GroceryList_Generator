@@ -2377,7 +2377,7 @@ for(let i=0;i<tableList.length;i++)
 } // loop to write data into the variable
 
 
-if (location.pathname == '/RG/recipefgenerator2.html')//to check if its homepage
+if (location.pathname == 'https://fakeandrewa.github.io/MealPlanner_GroceryList_Generator/')//to check if its homepage
 
 {
 
@@ -3025,7 +3025,7 @@ for(let i=0; i<datelist.length;i++)
     pos=i
   } 
 }
-const url='http://127.0.0.1:5500/RG/table.html'//locating the printing page
+const url='https://fakeandrewa.github.io/MealPlanner_GroceryList_Generator/table.html'//locating the printing page
 printable=ingredientslist[pos].content
 window.location.href = `${url}?key1=${JSON.stringify(printable)}`;//going to the page with the data for printing
 
