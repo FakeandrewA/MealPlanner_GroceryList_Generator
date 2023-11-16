@@ -2390,12 +2390,6 @@ if (JSON.parse(localStorage.getItem('date')).length==0)
 {
   document.querySelector('.datafromjs').innerHTML='<p style="text-align: center;">Create A Plan to display</p>'//default message to display in the start
 }
-if (ingredientslist==null)
-{
-  tableList=[]
-  datelist=[]
-  ingredientslist=[]    
-}
 }
 
 //#############################//################//##################//#####################//########################//######################//########################
@@ -2411,7 +2405,7 @@ function createTheDataTable()
  if(date) //if there is no date the whole function will not run
  {
 
-  if (ingredientsList==null) // for the first users the lists will be null to make updation we have changed it empty array
+  if (ingredientslist==null) // for the first users the lists will be null to make updation we have changed it empty array
   {
     tableList=[]
     datelist=[]
