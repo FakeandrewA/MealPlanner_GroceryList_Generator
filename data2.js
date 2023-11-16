@@ -2377,7 +2377,7 @@ for(let i=0;i<tableList.length;i++)
 } // loop to write data into the variable
 
 
-if (location.pathname == 'https://fakeandrewa.github.io/MealPlanner_GroceryList_Generator/')//to check if its homepage
+if (location.href == 'https://fakeandrewa.github.io/MealPlanner_GroceryList_Generator/')//to check if its homepage
 
 {
 
