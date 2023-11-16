@@ -1,0 +1,174 @@
+.container{
+  display: flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.allmenudetails{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container div{
+  justify-content: center;
+  border: 1px solid black;
+  padding:20px;
+  flex-wrap: wrap;
+  border-radius: 25px;
+
+}
+.header{
+  background-image:url("https://media.istockphoto.com/id/1258733624/vector/herbs-and-spices-seamless-pattern-ginger-spinach-onion-pepper-garlic-fennel-packaging.jpg?s=612x612&w=0&k=20&c=6Fioel8Vz9YjpamIfhS68KzPhPfgPbcX5gs_6fJQPzQ=");
+}
+
+#headerbackground{
+  background:transparent; 
+  height:10vh;
+}
+
+body{
+  background-image:url("https://img.freepik.com/premium-photo/gradient-soft-pink-lilac-abstract-background_901408-841.jpg");
+  background-size: cover;
+}
+
+
+
+.date{
+  border-radius:50px;
+}
+
+*{
+  font-size:14px;
+  font-weight:bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+select{
+  font-size:12px;
+  font-weight:100;
+  border: none;
+  background-color:black;
+  color: white;
+  border-radius:20px;
+}
+
+.lunch-MIIC,.breakfast-MIIC,.dinner-MIIC{
+  display: flex;
+  flex-direction:column;
+  gap:2px;
+
+}
+
+.breakfastMBG{
+  background-image:url('https://media.istockphoto.com/id/637380842/vector/red-checkered-tablecloths-patterns.jpg?s=612x612&w=0&k=20&c=RDuPwNlgNKRHuq0X76m0-vSjKDxpkcdBMfkyE69eX0A=');
+  background-size:200px;
+}
+.lunchMBG
+{
+  background-image: url('https://media.istockphoto.com/id/637380842/vector/red-checkered-tablecloths-patterns.jpg?s=612x612&w=0&k=20&c=RDuPwNlgNKRHuq0X76m0-vSjKDxpkcdBMfkyE69eX0A=');
+  background-size:300px;
+}
+.dinnerMBG
+{
+  background-image:url('https://media.istockphoto.com/id/637380842/vector/red-checkered-tablecloths-patterns.jpg?s=612x612&w=0&k=20&c=RDuPwNlgNKRHuq0X76m0-vSjKDxpkcdBMfkyE69eX0A=');
+  background-size:200px;
+}
+.breakfastCBG
+{
+  background-image: url('https://imgc.allpostersimages.com/img/print/u-g-Q1052Q40.jpg?w=550&h=550&p=0');
+}
+.lunchCBG
+{
+  background-image: url('https://imgc.allpostersimages.com/img/print/u-g-Q1052Q40.jpg?w=550&h=550&p=0');
+}
+.dinnerCBG
+{
+  background-image: url('https://imgc.allpostersimages.com/img/print/u-g-Q1052Q40.jpg?w=550&h=550&p=0');
+}
+.breakfastMT{
+  text-align: center;
+  font-family: cursive;
+  font-size:2vh;
+} 
+
+.lunchMT
+{
+  text-align: center;
+  font-family: cursive;
+  font-size:2vh;
+}
+.dinnerMT
+{
+  text-align: center;
+  font-family: cursive;
+  font-size:2vh;
+}
+
+.breakfast-details .instructions,.lunch-details .instructions,.dinner-details .instructions{
+max-width:300px;
+min-width:200px;
+}                                              
+
+.ingredients,.instructions,.calories{
+  font-size:14px;
+  font-weight:bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table-content table
+{
+ 
+  margin-left: 300px;
+  max-width:500px;
+  background-color: springgreen;
+}
+.table-content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.create{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: flex; 
+  margin-top:2px;
+}
+.create:hover{
+  background-color: red;
+}
+.create:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+                                                  /* ############## */
+.horizontalbreak{
+  width:100%;
+  min-width:max-content;
+}                                                
+
+.printable{
+ 
+  padding:20px;
+  padding-top:0px;
+  padding-bottom:5px;
+  background-color: #fff;
+  border: 2px solid black;
+  
+}
+.printable p{
+  max-width:1000px;
+  max-height:5px;
+}
+.GLtitle{
+  text-align: center;
+  padding-bottom:4px;
+}
