@@ -2412,16 +2412,16 @@ function createTheDataTable()
     ingredientslist=[]
   }
 
-  // for(let i=0;i<datelist.length;i++)
-  // { 
-  //   if(date===datelist[i])
-  //   {
-  //   datelist.splice(i,1)
-  //   tableList.splice(i,1)
-  //   console.log('hello')
-  //   }
+  for(let i=0;i<datelist.length;i++)
+  { 
+    if(date===datelist[i])
+    {
+    datelist.splice(i,1)
+    tableList.splice(i,1)
+    console.log('hello')
+    }
     
-  // }
+  }
 
   ingredientslist.push({content:[tempbreakfastIngredients,templunchIngredients,tempdinnerIngredients]})
  
