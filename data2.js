@@ -2411,14 +2411,14 @@ function createTheDataTable()
     datelist=[]
     ingredientslist=[]
   }
-
+// to delete the duplicate table this prevents the errors
   for(let i=0;i<datelist.length;i++)
   { 
     if(date===datelist[i])
     {
     datelist.splice(i,1)
     tableList.splice(i,1)
-    console.log('hello')
+    ingredientslist.splice(i,1)
     }
     
   }
@@ -2459,7 +2459,7 @@ if(breakfastMenu && !lunchMenu && !dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2473,11 +2473,11 @@ if(breakfastMenu && !lunchMenu && !dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak' style="border: 3px solid red; border-radius: 50px;"> `})
   }
 else if(breakfastMenu && lunchMenu && dinnerMenu)
 {
@@ -2533,7 +2533,7 @@ else if(breakfastMenu && lunchMenu && dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2547,7 +2547,7 @@ else if(breakfastMenu && lunchMenu && dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2595,7 +2595,7 @@ else if(breakfastMenu && !lunchMenu && dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2609,7 +2609,7 @@ else if(breakfastMenu && !lunchMenu && dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2657,7 +2657,7 @@ else if(breakfastMenu && lunchMenu && !dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2671,7 +2671,7 @@ else if(breakfastMenu && lunchMenu && !dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2719,7 +2719,7 @@ else if(!breakfastMenu && lunchMenu && dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2733,7 +2733,7 @@ else if(!breakfastMenu && lunchMenu && dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2769,7 +2769,7 @@ else if(!breakfastMenu && lunchMenu && !dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2783,7 +2783,7 @@ else if(!breakfastMenu && lunchMenu && !dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2819,7 +2819,7 @@ else if(!breakfastMenu && !lunchMenu && dinnerMenu)
           <tr>
             <td colspan="2">Total Calories</td>
             <td>${breakfastCalories+dinnerCalories+lunchCalories}Kcal</td>
-            <td><button class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
+            <td><button id='deletebutton' class='${date}' style="display:inline; background-color:Red" onclick="removeFromTable(${date});">X</button></td>
           </tr>
         </tfoot>
     </table>
@@ -2833,7 +2833,7 @@ else if(!breakfastMenu && !lunchMenu && dinnerMenu)
     <p><ul>${templunchIngredientsAsHTML}</ul></p>
     <p>${dinnerMenu}</p>
     <p><ul>${tempdinnerIngredientsAsHTML}</ul></p>
-    <button onclick="goToPrintPage(${date})">Print me</button>
+    <button id='printbutton' onclick="goToPrintPage(${date})">Print me</button>
     </div>
 
 </div>
@@ -2843,7 +2843,6 @@ else if(!breakfastMenu && !lunchMenu && !dinnerMenu)
 {
   alert('NO data to create')
 }
-
 //#############################//################//##################//#####################//########################//######################//########################
 
 if (tableList.length !=0) // to make sure there is data to be stored in localstorage
