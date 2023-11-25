@@ -29,14 +29,17 @@
 }
 
 body{
-  background-image:url("https://img.freepik.com/premium-photo/gradient-soft-pink-lilac-abstract-background_901408-841.jpg");
-  background-size: cover;
+  background-image:url("https://c1.wallpaperflare.com/path/170/1008/889/table-tomato-food-red-3d74d57ace2daf0e2d6fa19b90bc411e.jpg");
+  /* background-repeat: no-repeat; */
+  background-size:cover;
+  background-attachment: fixed;
 }
 
 
 
 .date{
   border-radius:50px;
+  cursor: pointer;
 }
 
 *{
@@ -51,6 +54,7 @@ select{
   background-color:black;
   color: white;
   border-radius:20px;
+  cursor: pointer;
 }
 
 .lunch-MIIC,.breakfast-MIIC,.dinner-MIIC{
@@ -118,14 +122,16 @@ min-width:200px;
 .table-content table
 {
  
-  margin-left: 300px;
+  /* margin-left: 300px; */
   max-width:500px;
-  background-color: springgreen;
+  background-image:url('https://imgc.allpostersimages.com/img/print/u-g-Q1052Q40.jpg?w=550&h=550&p=0') ;
 }
 .table-content{
   display: flex;
   flex-direction: row;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .create{
   cursor: pointer;
@@ -149,10 +155,10 @@ min-width:200px;
   transform: translateY(4px);
 }
 
-                                                  /* ############## */
 .horizontalbreak{
   width:100%;
   min-width:max-content;
+  border-color: red;
 }                                                
 
 .printable{
@@ -160,9 +166,9 @@ min-width:200px;
   padding:20px;
   padding-top:0px;
   padding-bottom:5px;
-  background-color: #fff;
+  background-image: url('https://media.istockphoto.com/id/535516833/vector/kitchen-pattern.jpg?s=612x612&w=0&k=20&c=_5HB777uCwrMh4lTSnJmf7yeHyq5NFlxm8S-9ucU-28=');
   border: 2px solid black;
-  
+  color:navy;
 }
 .printable p{
   max-width:1000px;
@@ -171,4 +177,25 @@ min-width:200px;
 .GLtitle{
   text-align: center;
   padding-bottom:4px;
+}
+#printbutton{
+  cursor: pointer;
+  
+}
+#printbutton:hover{
+  background-color:green;
+  color:white;
+}
+#printbutton:active{
+  background-color:black;
+}
+#deletebutton{
+  cursor: pointer;
+  border-radius: 100px;
+  border:none;
+  color:white;
+}
+
+#deletebutton:hover{
+  color:black;
 }
