@@ -29,10 +29,11 @@
 }
 
 body{
-  background-image:url("https://c1.wallpaperflare.com/path/170/1008/889/table-tomato-food-red-3d74d57ace2daf0e2d6fa19b90bc411e.jpg");
+  /* background-image:url("https://r4.wallpaperflare.com/wallpaper/346/806/481/low-poly-abstract-blue-digital-art-wallpaper-93ffa7678ed26714664afab4b4adff4a.jpg"); */
   /* background-repeat: no-repeat; */
   background-size:cover;
   background-attachment: fixed;
+  background-color:skyblue;
 }
 
 
@@ -156,9 +157,7 @@ min-width:200px;
 }
 
 .horizontalbreak{
-  width:100%;
-  min-width:max-content;
-  border-color: red;
+  border:1px solid black;
 }                                                
 
 .printable{
@@ -166,13 +165,18 @@ min-width:200px;
   padding:20px;
   padding-top:0px;
   padding-bottom:5px;
-  background-image: url('https://media.istockphoto.com/id/535516833/vector/kitchen-pattern.jpg?s=612x612&w=0&k=20&c=_5HB777uCwrMh4lTSnJmf7yeHyq5NFlxm8S-9ucU-28=');
+  /* background-image: url('https://media.istockphoto.com/id/637380842/vector/red-checkered-tablecloths-patterns.jpg?s=612x612&w=0&k=20&c=RDuPwNlgNKRHuq0X76m0-vSjKDxpkcdBMfkyE69eX0A='); */
   border: 2px solid black;
-  color:navy;
+  color:black;
+  background-color: aliceblue;
+}
+.printable p ul li{
+  background-color:green;
 }
 .printable p{
   max-width:1000px;
   max-height:5px;
+  font-size:18px;
 }
 .GLtitle{
   text-align: center;
