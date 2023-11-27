@@ -2477,7 +2477,7 @@ if(breakfastMenu && !lunchMenu && !dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid red; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
   }
 else if(breakfastMenu && lunchMenu && dinnerMenu)
 {
@@ -2551,7 +2551,7 @@ else if(breakfastMenu && lunchMenu && dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(breakfastMenu && !lunchMenu && dinnerMenu)
 {
@@ -2613,7 +2613,7 @@ else if(breakfastMenu && !lunchMenu && dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(breakfastMenu && lunchMenu && !dinnerMenu)
 {
@@ -2675,7 +2675,7 @@ else if(breakfastMenu && lunchMenu && !dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(!breakfastMenu && lunchMenu && dinnerMenu)
 {
@@ -2737,7 +2737,7 @@ else if(!breakfastMenu && lunchMenu && dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(!breakfastMenu && lunchMenu && !dinnerMenu)
 {
@@ -2787,7 +2787,7 @@ else if(!breakfastMenu && lunchMenu && !dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(!breakfastMenu && !lunchMenu && dinnerMenu)
 {
@@ -2837,7 +2837,7 @@ else if(!breakfastMenu && !lunchMenu && dinnerMenu)
     </div>
 
 </div>
-<hr class='horizontalbreak' style="border: 3px solid green; border-radius: 50px;"> `})
+<hr class='horizontalbreak'> `})
 }
 else if(!breakfastMenu && !lunchMenu && !dinnerMenu)
 {
